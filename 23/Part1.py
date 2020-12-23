@@ -17,4 +17,4 @@ for j in range(100):
     x.insert(ind + 2, p[1])
     x.insert(ind + 3, p[2])
     u = (x.index(cur)+1)%9
-print(x)
+print(*x[(x.index(1)+1):]+x[:x.index(1)],sep='')
